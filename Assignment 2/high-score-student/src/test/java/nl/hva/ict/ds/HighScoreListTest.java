@@ -1,6 +1,7 @@
 package nl.hva.ict.ds;
 
 import nl.hva.ict.ds.lists.BucketSortList;
+import nl.hva.ict.ds.lists.PriorityQueue;
 import nl.hva.ict.ds.lists.SelectionSortList;
 import org.junit.Before;
 import org.junit.Test;
@@ -27,8 +28,8 @@ public class HighScoreListTest {
         // Here you should select your implementation to be tested.
         //highScores = new DummyHighScores();
 //        highScores = new SelectionSortList();
-        highScores = new BucketSortList();
-//        highScores = new PriorityQueueHighScores();
+//        highScores = new BucketSortList();
+        highScores = new PriorityQueue<>();
 
         nearlyHeadlessNick = new Player("Nicholas", "de Mimsy-Porpington", getHighScore() % 200);
         dumbledore = new Player("Albus", "Dumbledore", nearlyHeadlessNick.getHighScore() * 1000);
