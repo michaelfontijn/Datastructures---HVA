@@ -14,29 +14,47 @@ public class BucketSortList implements HighScoreList {
 
     public void doBucketSort() {
         //Create n amount of buckets
-        Bucket[] sortBuckets = new Bucket[itemCount];
+        Bucket[] sortBuckets = new Bucket[100];
+
 
         //Now put the players in the correct buckets
         for (int i = 0; i < itemCount; i++) {
             Player currentP = playerCollection[i];
 
             //to determine the bucket index of the player, multiply the high score value by the amount of items in the
-            //collection and get the int value from this calculation. Java will floor this result down.
-            int bucketIndex = (int) (itemCount * currentP.getHighScore());//TODO this would only work with integers from 0.0 - 1.0 ish ;/
+            //collection and get the int value from this calculation. Java will floor this result down. //TODO change this explntion
+            int bucketIndex = (int) currentP.getHighScore() / 10000;
+
+            //TODO explain this (init a list with size 100, and only make the actual bucket when needed.)
+            if(sortBuckets[bucketIndex] == null) sortBuckets[bucketIndex] = new Bucket();
 
             sortBuckets[bucketIndex].insert(currentP);
         }
 
         //now sortBucket each bucket individually using a insertion sortBucket algorithm
         for (int i = 0; i < sortBuckets.length; i++) {
-            sortBuckets[i].sortBucket();//TODO check if this actually sorts this instance, or do i need to return a sorted list and overwrite this one? ;p
+
+            //Sort all buckets that have content
+            if(sortBuckets[i] != null){
+                sortBuckets[i].sortBucket();//TODO check if this actually sorts this instance, or do i need to return a sorted list and overwrite this one? ;p
+            }
         }
 
         //and finally concatenate all buckets back into one array
+//        int index = 0;
+//        for(int i = 0; i < itemCount; i++){
+//            for(int j = 0; j < sortBuckets.length; j++){
+//                playerCollection[index++] = sortBuckets[i].getPlayer(j);
+//            }
+//        }
+
         int index = 0;
-        for(int i = 0; i < itemCount; i++){
-            for(int j = 0; j < sortBuckets.length; i++){
-                playerCollection[index++] = sortBuckets[i].getPlayer(j);
+        for(int i = 0; i < sortBuckets.length; i++){
+            if(sortBuckets[i] != null){
+                Bucket currentBucket = sortBuckets[i];
+                for(int j = 0; j < sortBuckets[i].getSize(); j++){
+                    playerCollection[index++] = currentBucket.getPlayer(j);
+                }
             }
         }
 
@@ -149,17 +167,23 @@ class Bucket {
 
     public void sortBucket() {
         Player key;
-        for (int i = 1; i < players.length; i++) {
+        for (int i = 1; i < this.getSize(); i++) {
+
+            //if there is no player on index 1, there is most likeley only 1 item in the collection so no sort is required
+            if(players[1] == null) return;
 
             //the first unsorted element becomes the key
             key = players[i];
 
+
+
             //since we start the array counting from 1 we need to do -1 to get the actual index
             int index = i - 1;
 
+
             //now iterate trough the sorted half of the array(the left part) and check if each item is smaller than the key,
             //if it is smaller move it 1 to the right (check for smaller because its sorted in descending order)
-            while (index > 0 && players[index].getHighScore() < key.getHighScore()) {
+            while (index >= 0 && players[index].getHighScore() < key.getHighScore()) {
                 //move the element one position to the right, overwriting the key does not mater because we have stored
                 //it in a local variable and we re-add it later in the algorithm
                 players[index+1] = players[index];
@@ -170,5 +194,9 @@ class Bucket {
             //and when a value is found that is not bigger re-insert the key where the gap is
             players[index + 1] = key;
         }
+    }
+
+    public int getSize(){
+        return itemCount;
     }
 }
