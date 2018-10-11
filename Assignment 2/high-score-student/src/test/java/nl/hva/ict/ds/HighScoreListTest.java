@@ -28,8 +28,8 @@ public class HighScoreListTest {
         // Here you should select your implementation to be tested.
         //highScores = new DummyHighScores();
 //        highScores = new SelectionSortList();
-//        highScores = new BucketSortList();
-        highScores = new PriorityQueue<>();
+        highScores = new BucketSortList();
+        //highScores = new PriorityQueue<>();
 
         nearlyHeadlessNick = new Player("Nicholas", "de Mimsy-Porpington", getHighScore() % 200);
         dumbledore = new Player("Albus", "Dumbledore", nearlyHeadlessNick.getHighScore() * 1000);
@@ -89,4 +89,26 @@ public class HighScoreListTest {
 
 
     //TODO make a test to test if it goes ok when going over the max index, it should double the current size of the array
+
+    @Test
+    public void doMagic() {
+        highScores.add(dumbledore);
+        Player harry = new Player("Harry Last", "Potter", dumbledore.getHighScore() + 1);
+        highScores.add(harry);
+//        Player harry1 = new Player("Harry1", "Potter", dumbledore.getHighScore() + 2);
+//        Player harry2 = new Player("Harry2", "Potter", dumbledore.getHighScore() + 3);
+//        Player harrySeoccond = new Player("HarrySeccond", "Potter", dumbledore.getHighScore() + 4000);
+//        Player harryWin = new Player("HarryWinner", "Potter", MAX_HIGH_SCORE);
+//
+//        //harry should be added to the collection right..?
+//        highScores.add(harry);
+//        highScores.add(harry1);
+//        highScores.add(harry2);
+//        highScores.add(harryWin);
+//        highScores.add(harrySeoccond);
+
+
+
+        assertEquals(harry, highScores.getHighScores(1).get(0));
+    }
 }
