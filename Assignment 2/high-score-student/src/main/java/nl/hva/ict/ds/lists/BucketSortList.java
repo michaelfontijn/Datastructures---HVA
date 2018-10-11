@@ -13,7 +13,7 @@ public class BucketSortList implements HighScoreList {
 
 
     public void doBucketSort() {
-        //Create n amount of buckets
+        //Create 100 buckets, a bucket for each jump of 1000 since the max highscore is 100000
         Bucket[] sortBuckets = new Bucket[100];
 
 
@@ -21,38 +21,35 @@ public class BucketSortList implements HighScoreList {
         for (int i = 0; i < itemCount; i++) {
             Player currentP = playerCollection[i];
 
-            //to determine the bucket index of the player, multiply the high score value by the amount of items in the
-            //collection and get the int value from this calculation. Java will floor this result down. //TODO change this explntion
-            int bucketIndex = (int) currentP.getHighScore() / 10000;
+            //To determine the bucket in which the player should be placed, divide the highscore of the player by 1000,
+            //and subtract one since we work with indexes that start couting from 0
+            // if the index becomes -1 after subtracting 1 set it to 0
+            int bucketIndex = (int) (currentP.getHighScore() / 1000) - 1;
+            if (bucketIndex < 0) bucketIndex = 0;
 
-            //TODO explain this (init a list with size 100, and only make the actual bucket when needed.)
-            if(sortBuckets[bucketIndex] == null) sortBuckets[bucketIndex] = new Bucket();
+            //Only make the bucket when it is needed.
+            if (sortBuckets[bucketIndex] == null) sortBuckets[bucketIndex] = new Bucket();
 
+            //Add the player to its correct bucket
             sortBuckets[bucketIndex].insert(currentP);
         }
 
-        //now sortBucket each bucket individually using a insertion sortBucket algorithm
+        //now sort each bucket that is not null using the insertion sort algorithm
         for (int i = 0; i < sortBuckets.length; i++) {
 
             //Sort all buckets that have content
-            if(sortBuckets[i] != null){
-                sortBuckets[i].sortBucket();//TODO check if this actually sorts this instance, or do i need to return a sorted list and overwrite this one? ;p
+            if (sortBuckets[i] != null) {
+                sortBuckets[i].sortBucket();
             }
         }
 
-        //and finally concatenate all buckets back into one array
-//        int index = 0;
-//        for(int i = 0; i < itemCount; i++){
-//            for(int j = 0; j < sortBuckets.length; j++){
-//                playerCollection[index++] = sortBuckets[i].getPlayer(j);
-//            }
-//        }
-
+        //And for the final step, add all the sorted buckets back together in reverse order to end up with a sorted array
+        //in descending order
         int index = 0;
-        for(int i = 0; i < sortBuckets.length; i++){
-            if(sortBuckets[i] != null){
+        for (int i = sortBuckets.length - 1; i >= 0; i--) {
+            if (sortBuckets[i] != null) {
                 Bucket currentBucket = sortBuckets[i];
-                for(int j = 0; j < sortBuckets[i].getSize(); j++){
+                for (int j = 0; j < sortBuckets[i].getSize(); j++) {
                     playerCollection[index++] = currentBucket.getPlayer(j);
                 }
             }
@@ -116,7 +113,6 @@ public class BucketSortList implements HighScoreList {
                 result.add(playerCollection[i]);
             }
         }
-
         return result;
     }
 }
@@ -151,8 +147,8 @@ class Bucket {
      * @param index the index of the player you want to retrieve
      * @return An object of type Player
      */
-    public Player getPlayer(int index){
-        if(index > players.length) return null;
+    public Player getPlayer(int index) {
+        if (index > players.length) return null;
 
         return players[index];
     }
@@ -165,28 +161,32 @@ class Bucket {
 
     }
 
-    public void sortBucket() {
-        Player key;
-        for (int i = 1; i < this.getSize(); i++) {
 
-            //if there is no player on index 1, there is most likeley only 1 item in the collection so no sort is required
-            if(players[1] == null) return;
+    /***
+     * A method that sorts a bucket using a insertion sort algorithm. Its sorts the bucket in descending order
+     */
+    public void sortBucket() {
+        //if there is no more than 1 item in the list, no sort is required
+        //if (this.getSize() <= 1) return;
+
+
+        Player key;
+
+        //Go through all elements in the bucket
+        for (int i = 1; i < this.getSize(); i++) {
 
             //the first unsorted element becomes the key
             key = players[i];
 
-
-
             //since we start the array counting from 1 we need to do -1 to get the actual index
             int index = i - 1;
-
 
             //now iterate trough the sorted half of the array(the left part) and check if each item is smaller than the key,
             //if it is smaller move it 1 to the right (check for smaller because its sorted in descending order)
             while (index >= 0 && players[index].getHighScore() < key.getHighScore()) {
                 //move the element one position to the right, overwriting the key does not mater because we have stored
                 //it in a local variable and we re-add it later in the algorithm
-                players[index+1] = players[index];
+                players[index + 1] = players[index];
 
                 index--;
             }
@@ -196,7 +196,7 @@ class Bucket {
         }
     }
 
-    public int getSize(){
+    public int getSize() {
         return itemCount;
     }
 }
