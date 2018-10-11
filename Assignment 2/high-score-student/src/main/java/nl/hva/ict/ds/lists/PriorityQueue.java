@@ -11,15 +11,6 @@ public class PriorityQueue<E extends Comparable<E>> implements HighScoreList {
 
     public PriorityQueue(){}
 
-    /**
-     * Create a new heap from an excisting Array
-     */
-    public PriorityQueue(E[] array){
-        for (E item : array) {
-            this.add((Player) item);
-        }
-    }
-
     @Override
     public void add(Player player) {
         // First we add the player to the list
@@ -96,7 +87,7 @@ public class PriorityQueue<E extends Comparable<E>> implements HighScoreList {
             int rightChildIndex = 2 * currentIndex + 2;
 
             // Find the maximum between two children
-            if (leftChildIndex >= players.size()) break; // The tree is a heap
+            if (leftChildIndex >= players.size()) break;
             int maxIndex = leftChildIndex;
             if (rightChildIndex < players.size()) {
                 if (players.get(maxIndex).compareTo(
@@ -105,7 +96,7 @@ public class PriorityQueue<E extends Comparable<E>> implements HighScoreList {
                 }
             }
 
-            // Swap if the current node is less than the maximum
+            // Swap if the current players highscore is less than the childs highscore
             if (players.get(currentIndex).compareTo(
                     players.get(maxIndex)) < 0) {
                 E temp = players.get(maxIndex);
