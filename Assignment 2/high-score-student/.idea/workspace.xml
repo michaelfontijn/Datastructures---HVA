@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ef8c630-3ef2-42ff-809d-e094f6b55a36" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/lists/BucketSortList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/lists/BucketSortList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/lists/PriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/lists/PriorityQueue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/HighScoreListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/HighScoreListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/ds/HighScoreListTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -187,28 +190,101 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-394180262">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="2127" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2127" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/lists/BucketSortList.java">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/lists/SelectionSortList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="55" column="9" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="55" selection-end-column="9" />
+            <state relative-caret-position="-194">
+              <caret line="76" column="28" lean-forward="true" selection-start-line="76" selection-end-line="77" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#7570#7571#0" expanded="true" />
-                <element signature="e#7602#7603#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/lists/PriorityQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1180">
+              <caret line="54" column="88" selection-start-line="54" selection-start-column="88" selection-end-line="54" selection-end-column="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/lists/BucketSortList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="88" column="20" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#7074#7075#0" expanded="true" />
+                <element signature="e#7106#7107#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/HighScoreListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="53" />
+            <state relative-caret-position="94">
+              <caret line="180" column="64" selection-start-line="180" selection-start-column="64" selection-end-line="180" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/ArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="656" selection-start-line="656" selection-end-line="656" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/Random.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="387" selection-start-line="387" selection-end-line="387" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/lists/SinglePriorityQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="72" column="1" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -283,11 +359,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="19" />
-    <option name="width" value="1696" />
-    <option name="height" value="1026" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -432,6 +507,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -478,16 +554,6 @@
               <item name="assignment-2" type="b2602c69:ProjectViewProjectNode" />
               <item name="high-score-student" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ds" type="462c0819:PsiDirectoryNode" />
-              <item name="lists" type="462c0819:PsiDirectoryNode" />
-              <item name="BucketSortList.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="assignment-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="high-score-student" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -510,13 +576,12 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539298425030" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539367600673" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -537,7 +602,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HighScoreListTest">
+  <component name="RunManager" selected="JUnit.HighScoreListTest.findStudents">
     <configuration name="HighScoreListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="assignment-2" />
       <extension name="coverage">
@@ -552,7 +617,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HighScoreListTest.doMagic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HighScoreListTest.addALot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="assignment-2" />
       <extension name="coverage">
         <pattern>
@@ -562,13 +627,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="nl.hva.ict.ds" />
       <option name="MAIN_CLASS_NAME" value="nl.hva.ict.ds.HighScoreListTest" />
-      <option name="METHOD_NAME" value="doMagic" />
+      <option name="METHOD_NAME" value="addALot" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HighScoreListTest.harryBeatsDumbledore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HighScoreListTest.duel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="assignment-2" />
       <extension name="coverage">
         <pattern>
@@ -578,13 +643,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="nl.hva.ict.ds" />
       <option name="MAIN_CLASS_NAME" value="nl.hva.ict.ds.HighScoreListTest" />
-      <option name="METHOD_NAME" value="harryBeatsDumbledore" />
+      <option name="METHOD_NAME" value="duel" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HighScoreListTest.keepAllHighScores" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HighScoreListTest.findStudents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="assignment-2" />
       <extension name="coverage">
         <pattern>
@@ -594,13 +659,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="nl.hva.ict.ds" />
       <option name="MAIN_CLASS_NAME" value="nl.hva.ict.ds.HighScoreListTest" />
-      <option name="METHOD_NAME" value="keepAllHighScores" />
+      <option name="METHOD_NAME" value="findStudents" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HighScoreListTest.noMoreHighScoresCanBeGivenThenPresent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HighScoreListTest.searchPlayers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="assignment-2" />
       <extension name="coverage">
         <pattern>
@@ -610,7 +675,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="nl.hva.ict.ds" />
       <option name="MAIN_CLASS_NAME" value="nl.hva.ict.ds.HighScoreListTest" />
-      <option name="METHOD_NAME" value="noMoreHighScoresCanBeGivenThenPresent" />
+      <option name="METHOD_NAME" value="searchPlayers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -618,18 +683,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.HighScoreListTest" />
-      <item itemvalue="JUnit.HighScoreListTest.keepAllHighScores" />
-      <item itemvalue="JUnit.HighScoreListTest.noMoreHighScoresCanBeGivenThenPresent" />
-      <item itemvalue="JUnit.HighScoreListTest.harryBeatsDumbledore" />
-      <item itemvalue="JUnit.HighScoreListTest.doMagic" />
+      <item itemvalue="JUnit.HighScoreListTest.searchPlayers" />
+      <item itemvalue="JUnit.HighScoreListTest.duel" />
+      <item itemvalue="JUnit.HighScoreListTest.addALot" />
+      <item itemvalue="JUnit.HighScoreListTest.findStudents" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HighScoreListTest.findStudents" />
+        <item itemvalue="JUnit.HighScoreListTest.addALot" />
+        <item itemvalue="JUnit.HighScoreListTest.duel" />
+        <item itemvalue="JUnit.HighScoreListTest.searchPlayers" />
         <item itemvalue="JUnit.HighScoreListTest" />
-        <item itemvalue="JUnit.HighScoreListTest.doMagic" />
-        <item itemvalue="JUnit.HighScoreListTest.harryBeatsDumbledore" />
-        <item itemvalue="JUnit.HighScoreListTest.noMoreHighScoresCanBeGivenThenPresent" />
-        <item itemvalue="JUnit.HighScoreListTest.keepAllHighScores" />
       </list>
     </recent_temporary>
   </component>
@@ -661,45 +726,74 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HighScoreListTest_doMagic - 2018.10.11 at 23h 17m 35s.xml">
-      <configuration name="HighScoreListTest.doMagic" configurationId="JUnit" />
+    <history-entry file="HighScoreListTest_addALot - 2018.10.12 at 19h 28m 41s.xml">
+      <configuration name="HighScoreListTest.addALot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HighScoreListTest_doMagic - 2018.10.11 at 23h 17m 52s.xml">
-      <configuration name="HighScoreListTest.doMagic" configurationId="JUnit" />
+    <history-entry file="HighScoreListTest_addALot - 2018.10.12 at 19h 29m 47s.xml">
+      <configuration name="HighScoreListTest.addALot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HighScoreListTest_doMagic - 2018.10.11 at 23h 21m 43s.xml">
-      <configuration name="HighScoreListTest.doMagic" configurationId="JUnit" />
+    <history-entry file="HighScoreListTest_addALot - 2018.10.12 at 19h 29m 54s.xml">
+      <configuration name="HighScoreListTest.addALot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HighScoreListTest_doMagic - 2018.10.11 at 23h 24m 33s.xml">
-      <configuration name="HighScoreListTest.doMagic" configurationId="JUnit" />
+    <history-entry file="HighScoreListTest_addALot - 2018.10.12 at 19h 30m 18s.xml">
+      <configuration name="HighScoreListTest.addALot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HighScoreListTest_doMagic - 2018.10.11 at 23h 25m 02s.xml">
-      <configuration name="HighScoreListTest.doMagic" configurationId="JUnit" />
+    <history-entry file="HighScoreListTest_addALot - 2018.10.12 at 19h 30m 27s.xml">
+      <configuration name="HighScoreListTest.addALot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HighScoreListTest_doMagic - 2018.10.11 at 23h 36m 02s.xml">
-      <configuration name="HighScoreListTest.doMagic" configurationId="JUnit" />
+    <history-entry file="HighScoreListTest_addALot - 2018.10.12 at 19h 30m 32s.xml">
+      <configuration name="HighScoreListTest.addALot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HighScoreListTest - 2018.10.11 at 23h 44m 22s.xml">
-      <configuration name="HighScoreListTest" configurationId="JUnit" />
+    <history-entry file="HighScoreListTest_addALot - 2018.10.12 at 19h 30m 57s.xml">
+      <configuration name="HighScoreListTest.addALot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HighScoreListTest_doMagic - 2018.10.11 at 23h 45m 08s.xml">
-      <configuration name="HighScoreListTest.doMagic" configurationId="JUnit" />
+    <history-entry file="HighScoreListTest_addALot - 2018.10.12 at 19h 31m 21s.xml">
+      <configuration name="HighScoreListTest.addALot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HighScoreListTest - 2018.10.11 at 23h 45m 14s.xml">
-      <configuration name="HighScoreListTest" configurationId="JUnit" />
+    <history-entry file="HighScoreListTest_addALot - 2018.10.12 at 19h 31m 37s.xml">
+      <configuration name="HighScoreListTest.addALot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HighScoreListTest - 2018.10.11 at 23h 45m 16s.xml">
-      <configuration name="HighScoreListTest" configurationId="JUnit" />
+    <history-entry file="HighScoreListTest_findStudents - 2018.10.12 at 19h 38m 09s.xml">
+      <configuration name="HighScoreListTest.findStudents" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57959000" />
+    <option name="totallyTimeSpent" value="60703000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="19" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
+    <frame x="-6" y="0" width="781" height="830" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28056234" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.57975036" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48899755" visible="true" weight="0.5236729" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.55916846" weight="0.35886526" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4989339" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5110024" side_tool="true" weight="0.42152467" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49626866" weight="0.3328551" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" weight="0.06845966" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32932165" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.57975036" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -714,8 +808,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4989339" weight="0.329718" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5110024" side_tool="true" visible="true" weight="0.42152467" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4989339" weight="0.3328551" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5110024" side_tool="true" weight="0.42152467" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49626866" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -725,9 +819,9 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.06845966" />
+      <window_info anchor="right" id="Database" order="7" weight="0.06845966" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32932165" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -744,12 +838,6 @@
           <properties />
           <option name="timeStamp" value="35" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/lists/BucketSortList.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -763,47 +851,47 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>players</expression-string>
+        <expression-string>(99 - i) * 100</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>currentPlayer</expression-string>
+        <expression-string>99 - i * 100</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>((Player) pql.findPlayer(&quot;Jeroen&quot;, &quot;Beljaars&quot;)).getFirstName()</expression-string>
+        <expression-string>99 - i</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>heapArray</expression-string>
+        <expression-string>p</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>pql.findPlayer(&quot;Jeroen&quot;, &quot;&quot;)</expression-string>
+        <expression-string>r.nextInt(players.size())</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>pql.findPlayer(&quot;Jeroen&quot;, &quot;Beljaars&quot;)</expression-string>
+        <expression-string>r.nextInt(5)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>((Player) player).toString()</expression-string>
+        <expression-string>r.nextInt(1)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>player</expression-string>
+        <expression-string>r.nextInt(100-1)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>pq</expression-string>
+        <expression-string>r.nextInt(100-0)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -849,40 +937,10 @@
     </entry>
     <entry file="jar://D:/Program Files/Java/jdk1.8.0_151/src.zip!/java/lang/String.java" />
     <entry file="jar://D:/Program Files/Java/jdk1.8.0_151/src.zip!/java/lang/Override.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/lists/PriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="102" column="51" selection-start-line="102" selection-start-column="36" selection-end-line="102" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/lists/SelectionSortList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="74" selection-start-line="74" selection-end-line="85" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/CustomList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/lists/SinglePriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="72" column="1" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -942,22 +1000,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/HighScoreListTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/lists/SinglePriorityQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="53" />
+        <state relative-caret-position="306">
+          <caret line="72" column="1" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/lists/SelectionSortList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-194">
+          <caret line="76" column="28" lean-forward="true" selection-start-line="76" selection-end-line="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="387" selection-start-line="387" selection-end-line="387" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/lists/PriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1180">
+          <caret line="54" column="88" selection-start-line="54" selection-start-column="88" selection-end-line="54" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="656" selection-start-line="656" selection-end-line="656" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/lists/BucketSortList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="55" column="9" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="55" selection-end-column="9" />
+        <state relative-caret-position="100">
+          <caret line="88" column="20" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7570#7571#0" expanded="true" />
-            <element signature="e#7602#7603#0" expanded="true" />
+            <element signature="e#7074#7075#0" expanded="true" />
+            <element signature="e#7106#7107#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/HighScoreListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="180" column="64" selection-start-line="180" selection-start-column="64" selection-end-line="180" selection-end-column="64" />
         </state>
       </provider>
     </entry>

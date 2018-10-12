@@ -77,7 +77,7 @@ public class SelectionSortList implements HighScoreList {
         //loop an x amount of times based on the number of high scores asked by the user
         for (int i = 0; i < numberOfHighScores; i++) {
             //if the index lies beyond the length of the array return the current result
-            if (i > playerCollection.length) return result;
+            if (i >= playerCollection.length) return result;
             //when the current player is null this means there are no more players in the collection, return the current result
             if (playerCollection[i] == null) return result;
 

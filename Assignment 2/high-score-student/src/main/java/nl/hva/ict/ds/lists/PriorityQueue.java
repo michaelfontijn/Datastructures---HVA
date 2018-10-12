@@ -27,8 +27,13 @@ public class PriorityQueue<E extends Comparable<E>> implements HighScoreList {
             // If so make them swap places
             if (players.get(currentPlayer).compareTo(
                     players.get(parentIndex)) > 0) {
+                // Get the current player
                 E temp = players.get(currentPlayer);
+
+                // Set the parent player on the position of the current player
                 players.set(currentPlayer, players.get(parentIndex));
+
+                // Set the currentPlayer (which we stored in temp) at the position of the parent
                 players.set(parentIndex, temp);
             }
             else {
@@ -40,15 +45,18 @@ public class PriorityQueue<E extends Comparable<E>> implements HighScoreList {
 
     @Override
     public List<Player> getHighScores(int numberOfHighScores) {
-        ArrayList<E> heapArrayClone = (ArrayList<E>) players.clone();
+        // Clone the players list
+        ArrayList<E> playersClone = (ArrayList<E>) players.clone();
+
         List<Player> result = new ArrayList<>();
         if (numberOfHighScores > this.size())
                 numberOfHighScores = this.size();
 
+        //loop an x amount of times based on the number of high scores asked by the user
         for (int i = 0; i < numberOfHighScores; i++) {
             result.add((Player)this.remove());
         }
-        players = heapArrayClone;
+        players = playersClone;
         return result;
     }
 

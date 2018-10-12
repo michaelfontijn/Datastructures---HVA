@@ -7,6 +7,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.security.SecureRandom;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 import static org.junit.Assert.assertEquals;
@@ -29,7 +31,7 @@ public class HighScoreListTest {
         //highScores = new DummyHighScores();
 //        highScores = new SelectionSortList();
         highScores = new BucketSortList();
-        //highScores = new PriorityQueue<>();
+//        highScores = new PriorityQueue<>();
 
         nearlyHeadlessNick = new Player("Nicholas", "de Mimsy-Porpington", getHighScore() % 200);
         dumbledore = new Player("Albus", "Dumbledore", nearlyHeadlessNick.getHighScore());
@@ -92,8 +94,6 @@ public class HighScoreListTest {
 
     @Test
     public void manyPlayersWhoWins() {
-
-
         Player harry = new Player("Harry Last", "Potter", dumbledore.getHighScore() + 1);
         Player harry1 = new Player("Harry1", "Potter", 1000);
         Player harry2 = new Player("Harry2", "Potter", 4000);
@@ -111,5 +111,84 @@ public class HighScoreListTest {
 
 
         assertEquals(harryWin, highScores.getHighScores(1).get(0));
+    }
+
+    @Test
+    public void searchPlayers() {
+        Player harry = new Player("Harry", "Potter", 10342);
+        Player dumbledore = new Player("Albus", "Dumbledore", this.dumbledore.getHighScore());
+        Player hermione = new Player("hermione","granger", 10342);
+        Player ron = new Player("Ron", "Weasley", 10000);
+
+        highScores.add(harry);
+        highScores.add(dumbledore);
+        highScores.add(hermione);
+        highScores.add(ron);
+
+        assertEquals(harry, highScores.findPlayer("Harry", "Potter").get(0));
+        assertEquals(dumbledore, highScores.findPlayer("Albus", "Dumbledore").get(0));
+        assertEquals(hermione, highScores.findPlayer("hermione","granger").get(0));
+        assertEquals(ron, highScores.findPlayer("Ron", "Weasley").get(0));
+    }
+
+    @Test
+    public void duel(){
+        Player harry = new Player("Harry", "Potter", this.dumbledore.getHighScore() - 100);
+        Player dumbledore = new Player("Albus", "Dumbledore", this.dumbledore.getHighScore());
+        Player hermione = new Player("hermione","granger", harry.getHighScore() - 40);
+        Player ron = new Player("Ron", "Weasley", harry.getHighScore() - 1000);
+
+        highScores.add(harry);
+        highScores.add(dumbledore);
+        highScores.add(hermione);
+        highScores.add(ron);
+
+        List outcome = highScores.getHighScores(100);
+        assertEquals(dumbledore, outcome.get(0));
+        assertEquals(harry, outcome.get(1));
+        assertEquals(hermione, outcome.get(2));
+        assertEquals(ron, outcome.get(3));
+    }
+
+    @Test
+    public void addALot(){
+        Random r = new Random();
+        List players = new ArrayList();
+        int amountOfHogwartsStudents = 100;
+
+
+        for (int i = 0; i < amountOfHogwartsStudents; i++) {
+            Player player = new Player(String.valueOf(i), String.valueOf(i), i * 100);
+            players.add(player);
+        }
+        for (int i = 0; i < amountOfHogwartsStudents; i++) {
+            highScores.add((Player) players.remove(r.nextInt(players.size())));
+        }
+        List<Player> highScoreList = highScores.getHighScores(1000);
+        for (int i = 0; i < amountOfHogwartsStudents; i++) {
+            Player p = highScoreList.get(i);
+            System.out.println(i);
+            assertEquals(p.getHighScore(), (amountOfHogwartsStudents - i) * 100);
+            assertEquals(p.getFirstName(), String.valueOf(amountOfHogwartsStudents-i));
+        }
+    }
+
+    @Test
+    public void findStudents(){
+        Player harry = new Player("Harry", "Potter", this.dumbledore.getHighScore() - 100);
+        Player hermione = new Player("hermione","granger", harry.getHighScore() - 40);
+        Player ron = new Player("Ron", "Weasley", harry.getHighScore() - 1000);
+        Player harryWannabe = new Player("Harry", "Pooter", 10);
+
+        highScores.add(harry);
+        highScores.add(this.dumbledore);
+        highScores.add(hermione);
+        highScores.add(ron);
+        highScores.add(harryWannabe);
+
+        List<Player> yerAWizardHarry = highScores.findPlayer("Harry", "Potter");
+        assertEquals(harry, yerAWizardHarry.get(0));
+        assertEquals(harryWannabe, yerAWizardHarry.get(1));
+
     }
 }
