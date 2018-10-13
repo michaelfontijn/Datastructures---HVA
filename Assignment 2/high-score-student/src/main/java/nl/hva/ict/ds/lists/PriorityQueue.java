@@ -47,8 +47,10 @@ public class PriorityQueue<E extends Comparable<E>> implements HighScoreList {
     public List<Player> getHighScores(int numberOfHighScores) {
         // Clone the players list
         ArrayList<E> playersClone = (ArrayList<E>) players.clone();
-
         List<Player> result = new ArrayList<>();
+
+        // If the asked numberOfHighScores is bigger then the total amount of highscores
+        // set the numberOfHighScores to the size of the player list
         if (numberOfHighScores > this.size())
                 numberOfHighScores = this.size();
 
@@ -68,6 +70,7 @@ public class PriorityQueue<E extends Comparable<E>> implements HighScoreList {
 
         List<Player> result = new ArrayList<>();
 
+        //go trough all items in the collection to find matches with the search criteria
         for (E player: this.players) {
             Player pl = (Player) player;
             String fName = pl.getFirstName();
@@ -82,15 +85,21 @@ public class PriorityQueue<E extends Comparable<E>> implements HighScoreList {
     }
 
     public E remove() {
+        // If the players list is empty return
         if (players.size() == 0) return null;
 
+        // Store the object we are going to remove so we can return it at the end
         E removedObject = players.get(0);
+
+        // Remove the player with the highest high score
         players.set(0, players.get(players.size() - 1));
         players.remove(players.size() - 1);
 
         int currentIndex = 0;
-        while (currentIndex < players.size()) {
 
+        // While the current index is smaller then the total size of the players collection
+        while (currentIndex < players.size()) {
+            // Get the indes of the left and right child. ( The players underneath the currentPlayer )
             int leftChildIndex = 2 * currentIndex + 1;
             int rightChildIndex = 2 * currentIndex + 2;
 
@@ -112,7 +121,7 @@ public class PriorityQueue<E extends Comparable<E>> implements HighScoreList {
                 players.set(currentIndex, temp);
                 currentIndex = maxIndex;
             } else
-                break; // The tree is a heap
+                break;
         }
 
         return removedObject;

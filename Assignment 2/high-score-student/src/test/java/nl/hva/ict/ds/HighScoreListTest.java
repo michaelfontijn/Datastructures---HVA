@@ -30,8 +30,8 @@ public class HighScoreListTest {
         // Here you should select your implementation to be tested.
         //highScores = new DummyHighScores();
 //        highScores = new SelectionSortList();
-        highScores = new BucketSortList();
-//        highScores = new PriorityQueue<>();
+//        highScores = new BucketSortList();
+        highScores = new PriorityQueue<>();
 
         nearlyHeadlessNick = new Player("Nicholas", "de Mimsy-Porpington", getHighScore() % 200);
         dumbledore = new Player("Albus", "Dumbledore", nearlyHeadlessNick.getHighScore());
@@ -90,8 +90,6 @@ public class HighScoreListTest {
     }
 
 
-    //TODO make a test to test if it goes ok when going over the max index, it should double the current size of the array
-
     @Test
     public void manyPlayersWhoWins() {
         Player harry = new Player("Harry Last", "Potter", dumbledore.getHighScore() + 1);
@@ -133,8 +131,8 @@ public class HighScoreListTest {
 
     @Test
     public void duel(){
-        Player harry = new Player("Harry", "Potter", this.dumbledore.getHighScore() - 100);
-        Player dumbledore = new Player("Albus", "Dumbledore", this.dumbledore.getHighScore());
+        Player harry = new Player("Harry", "Potter", 12345 - 100);
+        Player dumbledore = new Player("Albus", "Dumbledore", 12345);
         Player hermione = new Player("hermione","granger", harry.getHighScore() - 40);
         Player ron = new Player("Ron", "Weasley", harry.getHighScore() - 1000);
 
@@ -167,15 +165,14 @@ public class HighScoreListTest {
         List<Player> highScoreList = highScores.getHighScores(1000);
         for (int i = 0; i < amountOfHogwartsStudents; i++) {
             Player p = highScoreList.get(i);
-            System.out.println(i);
-            assertEquals(p.getHighScore(), (amountOfHogwartsStudents - i) * 100);
-            assertEquals(p.getFirstName(), String.valueOf(amountOfHogwartsStudents-i));
+            assertEquals(p.getHighScore(), ((amountOfHogwartsStudents - 1) - i) * 100);
+            assertEquals(p.getFirstName(), String.valueOf((amountOfHogwartsStudents - 1) - i));
         }
     }
 
     @Test
     public void findStudents(){
-        Player harry = new Player("Harry", "Potter", this.dumbledore.getHighScore() - 100);
+        Player harry = new Player("Harry", "Potter", 12345 - 100);
         Player hermione = new Player("hermione","granger", harry.getHighScore() - 40);
         Player ron = new Player("Ron", "Weasley", harry.getHighScore() - 1000);
         Player harryWannabe = new Player("Harry", "Pooter", 10);
@@ -189,6 +186,5 @@ public class HighScoreListTest {
         List<Player> yerAWizardHarry = highScores.findPlayer("Harry", "Potter");
         assertEquals(harry, yerAWizardHarry.get(0));
         assertEquals(harryWannabe, yerAWizardHarry.get(1));
-
     }
 }
