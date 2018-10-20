@@ -35,7 +35,7 @@ public class HighScorePlayerFinderTest {
 
     @Before
     public final void setup() {
-        highscores = new HighScorePlayerFinder(7);
+        highscores = new HighScorePlayerFinder(700);
 
         nearlyHeadlessNick = new Player("Nicholas", "de Mimsy-Porpington", 95);
         dumbledore = new Player("Albus", "Dumbledore", nearlyHeadlessNick.getHighScore() * 1000);
