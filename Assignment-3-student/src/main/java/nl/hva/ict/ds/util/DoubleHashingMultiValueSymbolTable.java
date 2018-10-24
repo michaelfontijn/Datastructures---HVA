@@ -21,8 +21,8 @@ public class DoubleHashingMultiValueSymbolTable implements MultiValueSymbolTable
             players[index] = value;
         }
         else {
-            int i = 1;
             int index2 = hash2(key);
+            int i = 1;
             int newIndex;
             while(true){
                 newIndex = (index + i * index2);
@@ -41,16 +41,16 @@ public class DoubleHashingMultiValueSymbolTable implements MultiValueSymbolTable
         List<Player> result = new ArrayList<>();
 
         int index = hash(key);
-        if(players[index].getLastName() == key) {
+        if((players[index].getFirstName() + players[index].getLastName()).equals(key)) {
             result.add(players[index]);
         }
-        int i = 1;
         int index2 = hash2(key);
+        int i = 1;
         int newIndex;
         while(true){
             newIndex = (index + i * index2);
             if (newIndex >= arraySize) { break; }
-            if (players[newIndex] != null && players[newIndex].getLastName() == key) {
+            if (players[newIndex] != null && (players[index].getFirstName() + players[index].getLastName()).equals(key)) {
                 result.add(players[newIndex]);
             }
             i++;

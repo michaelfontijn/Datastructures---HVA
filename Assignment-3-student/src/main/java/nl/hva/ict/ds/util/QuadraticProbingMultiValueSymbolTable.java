@@ -25,7 +25,9 @@ public class QuadraticProbingMultiValueSymbolTable implements MultiValueSymbolTa
             int newIndex = 0;
             while(true){
                 newIndex = index + (int) Math.pow(i, 2);
-                if (newIndex >= arraySize) { System.out.println("There is no space for this value"); break; }
+                if (newIndex >= arraySize) {
+                    System.out.println("There is no space for this value"); break;
+                }
                 if (players[newIndex] == null) {
                     players[newIndex] = value;
                     break;
@@ -56,8 +58,8 @@ public class QuadraticProbingMultiValueSymbolTable implements MultiValueSymbolTa
         return result;
     }
 
-    public int hash(String firstName){
-        int result = firstName.hashCode() % arraySize;
+    public int hash(String lastName){
+        int result = lastName.hashCode() % arraySize;
 
         //for some reason the hashCode method sometimes creates negative hashes, just make it absolute to get a positive int
         if(result < 0) result = Math.abs(result);
