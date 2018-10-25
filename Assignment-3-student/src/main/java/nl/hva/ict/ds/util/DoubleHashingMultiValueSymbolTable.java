@@ -29,12 +29,12 @@ public class DoubleHashingMultiValueSymbolTable implements MultiValueSymbolTable
             int newIndex;
             while(true){
                 newIndex = (index + i * index2) % arraySize;
-                if (newIndex >= arraySize) { System.out.println("There is no space for this value"); break; }
                 if (players[newIndex] == null) {
                     players[newIndex] = value;
                     curSize++;
                     break;
                 }
+                if (newIndex == index) break;
                 i++;
             }
         }
