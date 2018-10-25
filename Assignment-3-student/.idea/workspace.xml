@@ -5,11 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/DoubleHashingMultiValueSymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/DoubleHashingMultiValueSymbolTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/QuadraticProbingMultiValueSymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/QuadraticProbingMultiValueSymbolTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/hva/ict/ds/util/Chain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/ExtendedPlayerFinderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/ExtendedPlayerFinderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/HighScorePlayerFinderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/HighScorePlayerFinderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nl/hva/ict/ds/util/DoubleHashingMultiValueSymbolTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/hva/ict/ds/util/DoubleHashingMultiValueSymbolTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/hva/ict/ds/util/LinearProbingMultiValueSymbolTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/hva/ict/ds/util/LinearProbingMultiValueSymbolTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/hva/ict/ds/util/Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/hva/ict/ds/util/QuadraticProbingMultiValueSymbolTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/hva/ict/ds/util/QuadraticProbingMultiValueSymbolTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/ds/ExtendedPlayerFinderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/ds/ExtendedPlayerFinderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/ds/HighScorePlayerFinderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/ds/HighScorePlayerFinderTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,23 +51,23 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="12" />
+          <entry key="java" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="12" />
+          <entry key="JAVA" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1652" />
+          <entry key="java" value="3014" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1652" />
+          <entry key="JAVA" value="3014" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -75,19 +75,20 @@
           <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/DoubleHashingMultiValueSymbolTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="46" selection-start-line="46" selection-end-line="57" selection-end-column="22" />
+            <state relative-caret-position="238">
+              <caret line="20" lean-forward="true" selection-end-line="82" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="238">
+              <caret line="14" column="17" lean-forward="true" selection-end-line="38" />
               <folding>
                 <element signature="e#553#554#0" expanded="true" />
                 <element signature="e#585#586#0" expanded="true" />
@@ -113,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/HighScorePlayerFinder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="396">
+              <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -122,7 +123,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar!/org/apache/commons/lang3/StringUtils.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="415">
               <caret line="27" column="65" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
             </state>
           </provider>
@@ -131,8 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/ExtendedPlayerFinderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="148">
+              <caret line="76" column="62" selection-start-line="76" selection-start-column="62" selection-end-line="76" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -140,26 +141,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/HighScorePlayerFinderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="387">
+              <caret line="116" lean-forward="true" selection-end-line="117" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/LinearProbingMultiValueSymbolTable.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/util/NameReaderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="64" column="49" selection-start-line="64" selection-start-column="47" selection-end-line="64" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/MultiValueSymbolTable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state relative-caret-position="68">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -167,17 +159,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/HighScoreList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
+            <state relative-caret-position="465">
               <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/LinearProbingMultiValueSymbolTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="41" column="13" lean-forward="true" selection-end-line="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/QuadraticProbingMultiValueSymbolTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="47" selection-start-line="47" selection-end-line="57" selection-end-column="22" />
+            <state relative-caret-position="221">
+              <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -187,6 +191,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>main</find>
+      <find>ete</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -195,12 +200,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/HighScorePlayerFinderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/LinearProbingMultiValueSymbolTable.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/HighScorePlayerFinder.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/Player.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/QuadraticProbingMultiValueSymbolTable.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/DoubleHashingMultiValueSymbolTable.java" />
+        <option value="$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/HighScorePlayerFinderTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/QuadraticProbingMultiValueSymbolTable.java" />
       </list>
     </option>
   </component>
@@ -211,17 +216,16 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="1071" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -304,15 +308,21 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540394210639" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540482293461" />
+    <property name="last_opened_file_path" value="D:/Bureaublad/ass/Assignment-3-student" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OneDrive - Hogeschool van Amsterdam\Datastructures\opdrachten\Practicums\Datastructures---HVA\Assignment-3-student\src\test\java\nl\hva\ict\ds" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -326,29 +336,49 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HighScorePlayerFinderTest.fancyPantsIsPresent">
-    <configuration name="DoubleHashingMultiValueSymbolTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.ds.util.DoubleHashingMultiValueSymbolTable" />
+  <component name="RunManager" selected="JUnit.ExtendedPlayerFinderTest.multipleHarryPotters">
+    <configuration name="ExtendedPlayerFinderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="assignment-3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="nl.hva.ict.ds.util.*" />
+          <option name="PATTERN" value="nl.hva.ict.ds.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="nl.hva.ict.ds" />
+      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.ds.ExtendedPlayerFinderTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuadraticProbingMultiValueSymbolTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.ds.util.QuadraticProbingMultiValueSymbolTable" />
+    <configuration name="ExtendedPlayerFinderTest.dumbledoreIsNotUnique" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="assignment-3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="nl.hva.ict.ds.util.*" />
+          <option name="PATTERN" value="nl.hva.ict.ds.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="nl.hva.ict.ds" />
+      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.ds.ExtendedPlayerFinderTest" />
+      <option name="METHOD_NAME" value="dumbledoreIsNotUnique" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExtendedPlayerFinderTest.multipleHarryPotters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assignment-3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.hva.ict.ds.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.hva.ict.ds" />
+      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.ds.ExtendedPlayerFinderTest" />
+      <option name="METHOD_NAME" value="multipleHarryPotters" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -367,7 +397,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HighScorePlayerFinderTest.fancyPantsIsPresent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HighScorePlayerFinderTest.addAndGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="assignment-3" />
       <extension name="coverage">
         <pattern>
@@ -377,40 +407,26 @@
       </extension>
       <option name="PACKAGE_NAME" value="nl.hva.ict.ds" />
       <option name="MAIN_CLASS_NAME" value="nl.hva.ict.ds.HighScorePlayerFinderTest" />
-      <option name="METHOD_NAME" value="fancyPantsIsPresent" />
+      <option name="METHOD_NAME" value="addAndGet" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="nl.hva.ict.ds in assignment-3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="assignment-3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="nl.hva.ict.ds.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="nl.hva.ict.ds" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.nl.hva.ict.ds in assignment-3" />
       <item itemvalue="JUnit.HighScorePlayerFinderTest" />
-      <item itemvalue="Application.QuadraticProbingMultiValueSymbolTable" />
-      <item itemvalue="Application.DoubleHashingMultiValueSymbolTable" />
-      <item itemvalue="JUnit.HighScorePlayerFinderTest.fancyPantsIsPresent" />
+      <item itemvalue="JUnit.ExtendedPlayerFinderTest" />
+      <item itemvalue="JUnit.ExtendedPlayerFinderTest.dumbledoreIsNotUnique" />
+      <item itemvalue="JUnit.HighScorePlayerFinderTest.addAndGet" />
+      <item itemvalue="JUnit.ExtendedPlayerFinderTest.multipleHarryPotters" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HighScorePlayerFinderTest.addAndGet" />
+        <item itemvalue="JUnit.ExtendedPlayerFinderTest.multipleHarryPotters" />
+        <item itemvalue="JUnit.ExtendedPlayerFinderTest.dumbledoreIsNotUnique" />
+        <item itemvalue="JUnit.ExtendedPlayerFinderTest" />
         <item itemvalue="JUnit.HighScorePlayerFinderTest" />
-        <item itemvalue="JUnit.HighScorePlayerFinderTest.fancyPantsIsPresent" />
-        <item itemvalue="Application.DoubleHashingMultiValueSymbolTable" />
-        <item itemvalue="Application.QuadraticProbingMultiValueSymbolTable" />
-        <item itemvalue="JUnit.nl.hva.ict.ds in assignment-3" />
       </list>
     </recent_temporary>
   </component>
@@ -429,50 +445,51 @@
       <workItem from="1540127458917" duration="1037000" />
       <workItem from="1540129046699" duration="800000" />
       <workItem from="1540149064472" duration="1560000" />
-      <workItem from="1540384829599" duration="9054000" />
+      <workItem from="1540384829599" duration="9602000" />
+      <workItem from="1540471698083" duration="10532000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HighScorePlayerFinderTest_fancyPantsIsPresent - 2018.10.24 at 15h 42m 35s.xml">
-      <configuration name="HighScorePlayerFinderTest.fancyPantsIsPresent" configurationId="JUnit" />
+    <history-entry file="ExtendedPlayerFinderTest_dumbledoreIsNotUnique - 2018.10.25 at 17h 08m 10s.xml">
+      <configuration name="ExtendedPlayerFinderTest.dumbledoreIsNotUnique" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HighScorePlayerFinderTest_fancyPantsIsPresent - 2018.10.24 at 15h 42m 43s.xml">
-      <configuration name="HighScorePlayerFinderTest.fancyPantsIsPresent" configurationId="JUnit" />
+    <history-entry file="HighScorePlayerFinderTest_addAndGet - 2018.10.25 at 17h 13m 40s.xml">
+      <configuration name="HighScorePlayerFinderTest.addAndGet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HighScorePlayerFinderTest_fancyPantsIsPresent - 2018.10.24 at 15h 46m 54s.xml">
-      <configuration name="HighScorePlayerFinderTest.fancyPantsIsPresent" configurationId="JUnit" />
+    <history-entry file="HighScorePlayerFinderTest_addAndGet - 2018.10.25 at 17h 15m 38s.xml">
+      <configuration name="HighScorePlayerFinderTest.addAndGet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HighScorePlayerFinderTest_fancyPantsIsPresent - 2018.10.24 at 15h 53m 35s.xml">
-      <configuration name="HighScorePlayerFinderTest.fancyPantsIsPresent" configurationId="JUnit" />
+    <history-entry file="HighScorePlayerFinderTest_addAndGet - 2018.10.25 at 17h 15m 51s.xml">
+      <configuration name="HighScorePlayerFinderTest.addAndGet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HighScorePlayerFinderTest_fancyPantsIsPresent - 2018.10.24 at 15h 54m 16s.xml">
-      <configuration name="HighScorePlayerFinderTest.fancyPantsIsPresent" configurationId="JUnit" />
+    <history-entry file="HighScorePlayerFinderTest_addAndGet - 2018.10.25 at 17h 16m 35s.xml">
+      <configuration name="HighScorePlayerFinderTest.addAndGet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HighScorePlayerFinderTest - 2018.10.24 at 15h 56m 08s.xml">
-      <configuration name="HighScorePlayerFinderTest" configurationId="JUnit" />
+    <history-entry file="HighScorePlayerFinderTest_addAndGet - 2018.10.25 at 17h 16m 49s.xml">
+      <configuration name="HighScorePlayerFinderTest.addAndGet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HighScorePlayerFinderTest - 2018.10.24 at 16h 02m 04s.xml">
-      <configuration name="HighScorePlayerFinderTest" configurationId="JUnit" />
+    <history-entry file="HighScorePlayerFinderTest_addAndGet - 2018.10.25 at 17h 17m 51s.xml">
+      <configuration name="HighScorePlayerFinderTest.addAndGet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HighScorePlayerFinderTest - 2018.10.24 at 16h 02m 10s.xml">
-      <configuration name="HighScorePlayerFinderTest" configurationId="JUnit" />
+    <history-entry file="ExtendedPlayerFinderTest_multipleHarryPotters - 2018.10.25 at 17h 21m 34s.xml">
+      <configuration name="ExtendedPlayerFinderTest.multipleHarryPotters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HighScorePlayerFinderTest - 2018.10.24 at 16h 02m 50s.xml">
-      <configuration name="HighScorePlayerFinderTest" configurationId="JUnit" />
+    <history-entry file="ExtendedPlayerFinderTest_multipleHarryPotters - 2018.10.25 at 17h 31m 27s.xml">
+      <configuration name="ExtendedPlayerFinderTest.multipleHarryPotters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HighScorePlayerFinderTest - 2018.10.24 at 16h 02m 53s.xml">
-      <configuration name="HighScorePlayerFinderTest" configurationId="JUnit" />
+    <history-entry file="HighScorePlayerFinderTest_addAndGet - 2018.10.25 at 17h 43m 46s.xml">
+      <configuration name="HighScorePlayerFinderTest.addAndGet" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19284000" />
+    <option name="totallyTimeSpent" value="30364000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="1073" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49921995" visible="true" weight="0.3281879" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49921995" visible="true" weight="0.1988273" />
       <window_info id="Structure" order="1" sideWeight="0.50078005" side_tool="true" weight="0.26066098" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -481,16 +498,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.42978725" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38611713" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.09219858" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3438178" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053304" side_tool="true" weight="0.3991323" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="bottom" id="Debug" order="11" sideWeight="0.49946696" weight="0.30477223" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.329718" />
+      <window_info anchor="bottom" id="Debug" order="11" sideWeight="0.49946696" weight="0.43167028" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -513,88 +530,98 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/QuadraticProbingMultiValueSymbolTable.java</url>
-          <line>86</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/DoubleHashingMultiValueSymbolTable.java</url>
-          <line>94</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/QuadraticProbingMultiValueSymbolTable.java</url>
-          <line>28</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/HighScorePlayerFinderTest.java</url>
-          <line>74</line>
+          <line>75</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/QuadraticProbingMultiValueSymbolTable.java</url>
-          <line>50</line>
+          <url>file://$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/ExtendedPlayerFinderTest.java</url>
+          <line>60</line>
           <properties />
-          <option name="timeStamp" value="14" />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/HighScorePlayerFinderTest.java</url>
+          <line>91</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/HighScorePlayerFinderTest.java</url>
+          <line>110</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/ExtendedPlayerFinderTest.java</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>(players[index].firstName + players[index].lastName).equals(key)</expression-string>
+        <expression-string>players</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>players[index].firstName + players[index].lastName == key</expression-string>
+        <expression-string>highscores.findPlayer(player.getFirstName(), &quot;&quot;).contains(player)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>players[index].firstName + players[index].lastName</expression-string>
+        <expression-string>player</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>players[index]</expression-string>
+        <expression-string>highscores.findPlayer(player.getFirstName(), &quot;&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>firstName + lastName</expression-string>
+        <expression-string>(players[index].getFirstName() + players[index].getLastName()).equals(key)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>players[index].getFirstName() + players[index].getLastName()</expression-string>
+        <expression-string>result</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>key</expression-string>
+        <expression-string>highscores</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>String.format(&quot;%s%s&quot;, players[index].getFirstName(), players[index].getLastName())</expression-string>
+        <expression-string>(index + (int) Math.pow(5, 2)) % arraySize</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>String.format(&quot;%s%s&quot;, players[index].getFirstName() + players[index].getLastName())</expression-string>
+        <expression-string>(index + (int) Math.pow(3, 2)) % arraySize</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/MultiValueSymbolTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/NameReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -609,38 +636,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/LinearProbingMultiValueSymbolTable.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar!/org/apache/commons/lang3/StringUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="64" column="49" selection-start-line="64" selection-start-column="47" selection-end-line="64" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/MultiValueSymbolTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="415">
+          <caret line="27" column="65" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/HighScoreList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
+        <state relative-caret-position="465">
           <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/ExtendedPlayerFinderTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/LinearProbingMultiValueSymbolTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="192">
+          <caret line="41" column="13" lean-forward="true" selection-end-line="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="238">
+          <caret line="14" column="17" lean-forward="true" selection-end-line="38" />
           <folding>
             <element signature="e#553#554#0" expanded="true" />
             <element signature="e#585#586#0" expanded="true" />
@@ -650,38 +670,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar!/org/apache/commons/lang3/StringUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="27" column="65" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/HighScorePlayerFinderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        <state relative-caret-position="387">
+          <caret line="116" lean-forward="true" selection-end-line="117" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/HighScorePlayerFinder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/QuadraticProbingMultiValueSymbolTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="47" selection-start-line="47" selection-end-line="57" selection-end-column="22" />
+        <state relative-caret-position="396">
+          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/DoubleHashingMultiValueSymbolTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="46" selection-start-line="46" selection-end-line="57" selection-end-column="22" />
+        <state relative-caret-position="238">
+          <caret line="20" lean-forward="true" selection-end-line="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/ExtendedPlayerFinderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="76" column="62" selection-start-line="76" selection-start-column="62" selection-end-line="76" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/QuadraticProbingMultiValueSymbolTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

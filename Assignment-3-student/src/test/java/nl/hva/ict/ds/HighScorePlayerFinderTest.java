@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.security.SecureRandom;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -35,7 +36,7 @@ public class HighScorePlayerFinderTest {
 
     @Before
     public final void setup() {
-        highscores = new HighScorePlayerFinder(700);
+        highscores = new HighScorePlayerFinder(997);
 
         nearlyHeadlessNick = new Player("Nicholas", "de Mimsy-Porpington", 95);
         dumbledore = new Player("Albus", "Dumbledore", nearlyHeadlessNick.getHighScore() * 1000);
@@ -88,6 +89,29 @@ public class HighScorePlayerFinderTest {
             String firstName = firstNames[randomizer.nextInt(firstNames.length)];
             String lastName = lastNames[randomizer.nextInt(lastNames.length)];
             highscores.add(new Player(firstName, lastName, randomizer.nextInt(1000)));
+        }
+    }
+
+    @Test
+    public void addAndGet() {
+        String [] firstNames = new NameReader("/firstnames.txt").getNames();
+        String [] lastNames = new NameReader("/lastnames.txt").getNames();
+
+        highscores = new HighScorePlayerFinder(10501); // Please adjust this size!
+
+        ArrayList<Player> players = new ArrayList<>();
+
+        for (int i = 0; i < 10000; i++) {
+            String firstName = firstNames[randomizer.nextInt(firstNames.length)];
+            String lastName = lastNames[randomizer.nextInt(lastNames.length)];
+            Player player = new Player(firstName, lastName, randomizer.nextInt(1000));
+            players.add(player);
+            highscores.add(player);
+        }
+        for (Player player: players) {
+//          assertTrue(highscores.findPlayer(player.getFirstName(), "").contains(player));
+            assertTrue(highscores.findPlayer("", player.getLastName()).contains(player));
+            assertTrue(highscores.findPlayer(player.getFirstName(), player.getLastName()).contains(player));
         }
     }
 

@@ -8,6 +8,7 @@ import java.util.List;
 public class QuadraticProbingMultiValueSymbolTable implements MultiValueSymbolTable<String, Player> {
     Player[] players;
     private int arraySize;
+    private int curSize = 0;
 
     public QuadraticProbingMultiValueSymbolTable(int arraySize) {
         players = new Player[arraySize];
@@ -16,20 +17,18 @@ public class QuadraticProbingMultiValueSymbolTable implements MultiValueSymbolTa
 
     @Override
     public void put(String key, Player value) {
+        if (curSize == arraySize) return;
+
         int index = hash(key);
         if(players[index] == null) {
             players[index] = value;
         }
         else {
             int i = 1;
-            int newIndex = 0;
             while(true){
-                newIndex = index + (int) Math.pow(i, 2);
-                if (newIndex >= arraySize) {
-                    System.out.println("There is no space for this value"); break;
-                }
-                if (players[newIndex] == null) {
-                    players[newIndex] = value;
+                index = (index + (int) Math.pow(i, 2)) % arraySize;
+                if (players[index] == null) {
+                    players[index] = value;
                     break;
                 }
                 i++;
@@ -42,17 +41,14 @@ public class QuadraticProbingMultiValueSymbolTable implements MultiValueSymbolTa
         List<Player> result = new ArrayList<>();
 
         int index = hash(key);
-        if(players[index].getLastName() == key) {
-            result.add(players[index]);
-        }
+        int start = index;
         int i = 1;
-        int newIndex = 0;
-        while(true){
-            newIndex = index + (int) Math.pow(i, 2);
-            if (newIndex >= arraySize) { break; }
-            if (players[newIndex] != null && players[newIndex].getLastName() == key) {
-                result.add(players[newIndex]);
+        while(players[index] != null) {
+            if (players[index].getLastName().equals(key)) {
+                result.add(players[index]);
             }
+            index = (index + (int) Math.pow(i, 2)) % arraySize;
+            if (index == start) break;
             i++;
         }
         return result;

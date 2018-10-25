@@ -7,7 +7,8 @@ import java.util.List;
 
 public class DoubleHashingMultiValueSymbolTable implements MultiValueSymbolTable<String, Player> {
     Player[] players;
-    private int arraySize;
+    private int arraySize = 0;
+    private int curSize;
 
     public DoubleHashingMultiValueSymbolTable(int arraySize) {
         players = new Player[arraySize];
@@ -16,6 +17,8 @@ public class DoubleHashingMultiValueSymbolTable implements MultiValueSymbolTable
 
     @Override
     public void put(String key, Player value) {
+        if (curSize == arraySize) return; // array is full
+
         int index = hash(key);
         if(players[index] == null) {
             players[index] = value;
@@ -25,10 +28,11 @@ public class DoubleHashingMultiValueSymbolTable implements MultiValueSymbolTable
             int i = 1;
             int newIndex;
             while(true){
-                newIndex = (index + i * index2);
+                newIndex = (index + i * index2) % arraySize;
                 if (newIndex >= arraySize) { System.out.println("There is no space for this value"); break; }
                 if (players[newIndex] == null) {
                     players[newIndex] = value;
+                    curSize++;
                     break;
                 }
                 i++;
@@ -47,14 +51,14 @@ public class DoubleHashingMultiValueSymbolTable implements MultiValueSymbolTable
         int index2 = hash2(key);
         int i = 1;
         int newIndex;
-        while(true){
-            newIndex = (index + i * index2);
+        do {
+            newIndex = (index + i * index2) % arraySize;
             if (newIndex >= arraySize) { break; }
-            if (players[newIndex] != null && (players[index].getFirstName() + players[index].getLastName()).equals(key)) {
+            if (players[newIndex] != null && (players[newIndex].getFirstName() + players[newIndex].getLastName()).equals(key)) {
                 result.add(players[newIndex]);
             }
             i++;
-        }
+        } while (players[newIndex] != null && newIndex != index);
         return result;
     }
 
@@ -74,24 +78,5 @@ public class DoubleHashingMultiValueSymbolTable implements MultiValueSymbolTable
         if(result < 0) result = Math.abs(result);
 
         return result;
-    }
-    public static void main(String [] args)
-    {
-        DoubleHashingMultiValueSymbolTable q = new DoubleHashingMultiValueSymbolTable(100);
-        Player p1 = new Player("Nicholas", "de Mimsy-Porpington", 95);
-        Player p2 = new Player("Albus", "Dumbledore", p1.getHighScore() * 1000);
-        Player p3 = new Player("Harry", "Potter", p2.getHighScore() + 1000);
-        Player p4 = new Player("James", "Potter", p3.getHighScore() - 4000);
-        Player p5 = new Player("Lily", "Potter", p4.getHighScore() - 4000);
-        Player p6 = new Player("polygene", "lubricants", p5.getHighScore() - 10);
-
-        q.put(p1.getLastName(), p1);
-        q.put(p2.getLastName(), p2);
-        q.put(p3.getLastName(), p3);
-        q.put(p4.getLastName(), p4);
-        q.put(p5.getLastName(), p5);
-        q.put(p6.getLastName(), p6);
-
-        q.get("Potter");
     }
 }
