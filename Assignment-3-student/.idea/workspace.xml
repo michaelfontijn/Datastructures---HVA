@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8062b84c-2a43-42ce-9bd7-ea2182c68824" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/LinearProbingMultiValueSymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/LinearProbingMultiValueSymbolTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/HighScorePlayerFinderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/HighScorePlayerFinderTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,32 +99,32 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="350" />
+          <entry key="java" value="481" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="350" />
+          <entry key="JAVA" value="481" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/LinearProbingMultiValueSymbolTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="153">
+              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/HighScorePlayerFinderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="116" column="30" lean-forward="true" selection-start-line="116" selection-start-column="30" selection-end-line="116" selection-end-column="30" />
+            <state relative-caret-position="238">
+              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -157,8 +156,8 @@
         <option value="$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/QuadraticProbingMultiValueSymbolTable.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/DoubleHashingMultiValueSymbolTable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/LinearProbingMultiValueSymbolTable.java" />
         <option value="$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/HighScorePlayerFinderTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/LinearProbingMultiValueSymbolTable.java" />
       </list>
     </option>
   </component>
@@ -168,7 +167,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -258,7 +257,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540553721129" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540554473374" />
     <property name="last_opened_file_path" value="D:/Bureaublad/Project-EWA/VisualMethodologies" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -280,7 +279,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HighScorePlayerFinderTest.addAndGet">
+  <component name="RunManager" selected="JUnit.HighScorePlayerFinderTest">
     <configuration name="ExtendedPlayerFinderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="assignment-3" />
       <extension name="coverage">
@@ -366,8 +365,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HighScorePlayerFinderTest.addAndGet" />
         <item itemvalue="JUnit.HighScorePlayerFinderTest" />
+        <item itemvalue="JUnit.HighScorePlayerFinderTest.addAndGet" />
         <item itemvalue="JUnit.ExtendedPlayerFinderTest" />
         <item itemvalue="JUnit.ExtendedPlayerFinderTest.nicholassesIsNotUnique" />
         <item itemvalue="JUnit.ExtendedPlayerFinderTest.multipleHarryPotters" />
@@ -392,14 +391,11 @@
       <workItem from="1540384829599" duration="9602000" />
       <workItem from="1540471698083" duration="12491000" />
       <workItem from="1540497049277" duration="606000" />
-      <workItem from="1540551533448" duration="2429000" />
+      <workItem from="1540551533448" duration="2931000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HighScorePlayerFinderTest_addAndGet - 2018.10.26 at 13h 12m 07s.xml">
-      <configuration name="HighScorePlayerFinderTest.addAndGet" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HighScorePlayerFinderTest_addAndGet - 2018.10.26 at 13h 12m 25s.xml">
       <configuration name="HighScorePlayerFinderTest.addAndGet" configurationId="JUnit" />
     </history-entry>
@@ -427,12 +423,15 @@
     <history-entry file="HighScorePlayerFinderTest - 2018.10.26 at 13h 32m 08s.xml">
       <configuration name="HighScorePlayerFinderTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="HighScorePlayerFinderTest_addAndGet - 2018.10.26 at 13h 47m 48s.xml">
+      <configuration name="HighScorePlayerFinderTest.addAndGet" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35358000" />
+    <option name="totallyTimeSpent" value="35860000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49921995" visible="true" weight="0.25586355" />
@@ -640,17 +639,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/HighScorePlayerFinderTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/LinearProbingMultiValueSymbolTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="116" column="30" lean-forward="true" selection-start-line="116" selection-start-column="30" selection-end-line="116" selection-end-column="30" />
+        <state relative-caret-position="153">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/hva/ict/ds/util/LinearProbingMultiValueSymbolTable.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/hva/ict/ds/HighScorePlayerFinderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="238">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
         </state>
       </provider>
     </entry>

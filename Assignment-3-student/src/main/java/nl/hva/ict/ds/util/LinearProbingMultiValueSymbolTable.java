@@ -9,7 +9,7 @@ import java.util.List;
 public class LinearProbingMultiValueSymbolTable implements MultiValueSymbolTable<String, Player> {
 
     Player[] table;
-
+    int currentItems = 0;
 
     public LinearProbingMultiValueSymbolTable(int arraySize) {
         //initialize the array size //TODO the static size is temp for test, but idk why the unit test class initializes the array with an size of 7, this is ofc never goign to work..
@@ -18,9 +18,10 @@ public class LinearProbingMultiValueSymbolTable implements MultiValueSymbolTable
 
     @Override
     public void put(String key, Player value) {
-        int desiredIndex = customHash(key);
+        //if there is no more space in the array
+        if(currentItems >= table.length) return;
 
-        if(desiredIndex > table.length-1) return;
+        int desiredIndex = customHash(key);
 
         //check if there already is an index on the desired index, find the next open index
         if(table[desiredIndex] != null){
@@ -29,8 +30,6 @@ public class LinearProbingMultiValueSymbolTable implements MultiValueSymbolTable
             int openIndex = desiredIndex;
             while(table[openIndex] != null){
 
-                //if the index gets bigger than the size of the collection just return
-                if(openIndex > table.length-1) return;
                 openIndex = (openIndex +1) % table.length;
             }
 
@@ -41,7 +40,7 @@ public class LinearProbingMultiValueSymbolTable implements MultiValueSymbolTable
             table[desiredIndex] = value;
         }
 
-
+        currentItems++;
     }
 
     @Override
