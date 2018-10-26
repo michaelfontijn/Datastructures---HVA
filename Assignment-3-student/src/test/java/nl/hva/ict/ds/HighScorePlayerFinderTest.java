@@ -91,30 +91,4 @@ public class HighScorePlayerFinderTest {
             highscores.add(new Player(firstName, lastName, randomizer.nextInt(1000)));
         }
     }
-
-    @Test
-    public void addAndGet() {
-        String [] firstNames = new NameReader("/firstnames.txt").getNames();
-        String [] lastNames = new NameReader("/lastnames.txt").getNames();
-
-        highscores = new HighScorePlayerFinder(10501); // Please adjust this size!
-
-        ArrayList<Player> players = new ArrayList<>();
-
-        for (int i = 0; i < 10000; i++) {
-            String firstName = firstNames[randomizer.nextInt(firstNames.length)];
-            String lastName = lastNames[randomizer.nextInt(lastNames.length)];
-            Player player = new Player(firstName, lastName, randomizer.nextInt(1000));
-            players.add(player);
-            highscores.add(player);
-        }
-        for (Player player: players) {
-            assertTrue(highscores.findPlayer(player.getFirstName(), "").contains(player));
-            assertTrue(highscores.findPlayer("", player.getLastName()).contains(player));
-            assertTrue(highscores.findPlayer(player.getFirstName(), player.getLastName()).contains(player));
-        }
-
-        System.out.println(1);
-    }
-
 }

@@ -1,11 +1,16 @@
 package nl.hva.ict.ds;
 
+import nl.hva.ict.ds.util.NameReader;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.security.SecureRandom;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertTrue;
 
 /**
  * If you have any tests that should be overwritten or added please put them to this class.
@@ -20,12 +25,13 @@ public class ExtendedPlayerFinderTest extends HighScorePlayerFinderTest {
     Player james2 ;
     Player harry3;
     Player voldemort2;
+    private Random randomizer = new SecureRandom();
 
     @Before
     public final void setup2() {
         highscores2 = new HighScorePlayerFinder(7);
 
-        nearlyHeadlessNick2 = new Player("Nicholas", "de Mimsy-Porpington", 95);
+        nearlyHeadlessNick2 = new Player("Nicholas", "de Mimsy-Porpington", 34);
         dumbledore2 = new Player("Albus", "Dumbledore", nearlyHeadlessNick.getHighScore() * 1000);
         harry2 = new Player("Harry", "Potter", dumbledore.getHighScore() + 1000);
         james2 = new Player("James", "Potter", harry.getHighScore() - 4000);
@@ -50,8 +56,8 @@ public class ExtendedPlayerFinderTest extends HighScorePlayerFinderTest {
     }
 
     @Test
-    public final void noOneIsThere() {
-        List<Player> list = highscores2.findPlayer("LOL", null);
+    public final void noResultsFirstName() {
+        List<Player> list = highscores2.findPlayer("Jaapie", null);
 
         assertEquals(0, list.size());
     }
@@ -66,8 +72,8 @@ public class ExtendedPlayerFinderTest extends HighScorePlayerFinderTest {
     }
 
     @Test
-    public final void invalidNameLastName() {
-        List<Player> headless = highscores2.findPlayer(null, "Kip");
+    public final void noMatchesLastName() {
+        List<Player> headless = highscores2.findPlayer(null, "Krekel");
 
         assertEquals(0, headless.size());
     }
@@ -82,10 +88,32 @@ public class ExtendedPlayerFinderTest extends HighScorePlayerFinderTest {
     }
 
     @Test
-    public final void invalidNameFullName() {
-        List<Player> headless = highscores2.findPlayer("Geen", "Kip");
+    public final void noMatches() {
+        List<Player> result = highscores2.findPlayer("Jaapie", "Krekel");
 
-        assertEquals(0, headless.size());
+        assertEquals(0, result.size());
     }
 
+    @Test
+    public void addAndGet() {
+        String [] firstNames = new NameReader("/firstnames.txt").getNames();
+        String [] lastNames = new NameReader("/lastnames.txt").getNames();
+
+        highscores = new HighScorePlayerFinder(10501); // Please adjust this size!
+
+        ArrayList<Player> players = new ArrayList<>();
+
+        for (int i = 0; i < 10000; i++) {
+            String firstName = firstNames[randomizer.nextInt(firstNames.length)];
+            String lastName = lastNames[randomizer.nextInt(lastNames.length)];
+            Player player = new Player(firstName, lastName, randomizer.nextInt(1000));
+            players.add(player);
+            highscores.add(player);
+        }
+        for (Player player: players) {
+            assertTrue(highscores.findPlayer(player.getFirstName(), "").contains(player));
+            assertTrue(highscores.findPlayer("", player.getLastName()).contains(player));
+            assertTrue(highscores.findPlayer(player.getFirstName(), player.getLastName()).contains(player));
+        }
+    }
 }
