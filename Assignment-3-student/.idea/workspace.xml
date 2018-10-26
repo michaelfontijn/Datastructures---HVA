@@ -312,7 +312,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HighScorePlayerFinderTest.collisionsShouldHappen">
+  <component name="RunManager" selected="JUnit.ExtendedPlayerFinderTest">
     <configuration name="ExtendedPlayerFinderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="assignment-3" />
       <extension name="coverage">
@@ -398,10 +398,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExtendedPlayerFinderTest" />
         <item itemvalue="JUnit.HighScorePlayerFinderTest.collisionsShouldHappen" />
         <item itemvalue="JUnit.HighScorePlayerFinderTest" />
         <item itemvalue="JUnit.HighScorePlayerFinderTest.addAndGet" />
-        <item itemvalue="JUnit.ExtendedPlayerFinderTest" />
         <item itemvalue="JUnit.ExtendedPlayerFinderTest.nicholassesIsNotUnique" />
       </list>
     </recent_temporary>

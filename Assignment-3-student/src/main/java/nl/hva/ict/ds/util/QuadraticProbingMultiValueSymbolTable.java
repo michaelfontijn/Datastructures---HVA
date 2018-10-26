@@ -32,12 +32,12 @@ public class QuadraticProbingMultiValueSymbolTable implements MultiValueSymbolTa
                 index = (index + (int) Math.pow(i, 2)) % arraySize;
                 if (players[index] == null) {
                     players[index] = value;
-                    curSize++;
                     break;
                 }
                 i++;
             }
         }
+        curSize++;
     }
 
     @Override
