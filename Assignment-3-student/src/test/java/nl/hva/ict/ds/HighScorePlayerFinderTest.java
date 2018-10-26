@@ -109,10 +109,12 @@ public class HighScorePlayerFinderTest {
             highscores.add(player);
         }
         for (Player player: players) {
-//          assertTrue(highscores.findPlayer(player.getFirstName(), "").contains(player));
+            assertTrue(highscores.findPlayer(player.getFirstName(), "").contains(player));
             assertTrue(highscores.findPlayer("", player.getLastName()).contains(player));
             assertTrue(highscores.findPlayer(player.getFirstName(), player.getLastName()).contains(player));
         }
+
+        System.out.println(1);
     }
 
 }

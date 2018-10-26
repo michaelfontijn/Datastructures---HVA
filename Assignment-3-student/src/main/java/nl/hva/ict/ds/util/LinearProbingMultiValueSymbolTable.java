@@ -28,7 +28,10 @@ public class LinearProbingMultiValueSymbolTable implements MultiValueSymbolTable
             //find the next open index
             int openIndex = desiredIndex;
             while(table[openIndex] != null){
-                openIndex++;
+
+                //if the index gets bigger than the size of the collection just return
+                if(openIndex > table.length-1) return;
+                openIndex = (openIndex +1) % table.length;
             }
 
             //place the player on the open index
@@ -49,7 +52,7 @@ public class LinearProbingMultiValueSymbolTable implements MultiValueSymbolTable
         int startIndex = customHash(key);
 
         //find a match with the key
-        for(int i = startIndex; i < table.length; i++){
+        for(int i = startIndex; i < table.length; i = (i+ 1 ) % table.length){
             if(table[i] == null) return result;
 
             if(table[i].getFirstName() == key){
@@ -65,10 +68,11 @@ public class LinearProbingMultiValueSymbolTable implements MultiValueSymbolTable
      * @return a hash of type int
      */
     private int customHash(String stringToHash){
-        int result = stringToHash.hashCode() % (table.length -1);
+        int result = stringToHash.hashCode() % table.length ;
 
         //for some reason the hashCode method sometimes creates negative hashes, just make it absolute to get a positive int
         if(result < 0) result = Math.abs(result);
+
 
         return result;
     }
