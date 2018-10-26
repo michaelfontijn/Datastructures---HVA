@@ -9,6 +9,7 @@ public class DoubleHashingMultiValueSymbolTable implements MultiValueSymbolTable
     Player[] players;
     private int arraySize = 0;
     private int curSize;
+    int colission =0;
 
     public DoubleHashingMultiValueSymbolTable(int arraySize) {
         players = new Player[arraySize];
@@ -28,6 +29,8 @@ public class DoubleHashingMultiValueSymbolTable implements MultiValueSymbolTable
             int i = 1;
             int newIndex;
             while(true){
+                colission++;
+
                 newIndex = (index + i * index2) % arraySize;
                 if (players[newIndex] == null) {
                     players[newIndex] = value;

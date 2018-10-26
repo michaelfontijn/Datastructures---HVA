@@ -10,6 +10,7 @@ public class LinearProbingMultiValueSymbolTable implements MultiValueSymbolTable
 
     Player[] table;
     int currentItems = 0;
+    int collisions = 0;
 
     public LinearProbingMultiValueSymbolTable(int arraySize) {
         //initialize the array size //TODO the static size is temp for test, but idk why the unit test class initializes the array with an size of 7, this is ofc never goign to work..
@@ -30,6 +31,7 @@ public class LinearProbingMultiValueSymbolTable implements MultiValueSymbolTable
             int openIndex = desiredIndex;
             while(table[openIndex] != null){
 
+                collisions++;
                 openIndex = (openIndex +1) % table.length;
             }
 

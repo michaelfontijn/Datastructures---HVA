@@ -9,6 +9,7 @@ public class QuadraticProbingMultiValueSymbolTable implements MultiValueSymbolTa
     Player[] players;
     private int arraySize;
     private int curSize = 0;
+    int collisions = 0;
 
     public QuadraticProbingMultiValueSymbolTable(int arraySize) {
         players = new Player[arraySize];
@@ -26,6 +27,8 @@ public class QuadraticProbingMultiValueSymbolTable implements MultiValueSymbolTa
         else {
             int i = 1;
             while(true){
+                collisions++;
+
                 index = (index + (int) Math.pow(i, 2)) % arraySize;
                 if (players[index] == null) {
                     players[index] = value;
